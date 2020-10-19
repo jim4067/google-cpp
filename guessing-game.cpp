@@ -15,11 +15,11 @@ void guess_me()
     int user_input = 0;
 
     std::srand(time(NULL));
-    int random = (std::rand() % 10) + 1;
+    int secret_number = (std::rand() % 10) + 1;
 
-    while (user_input != random)
+    while (user_input != secret_number)
     {
-        std::cout << "Guess a number : ";
+        std::cout << "Guess the secret number between 1 and 10 : ";
 
         if (!(std::cin))
         {
@@ -28,9 +28,12 @@ void guess_me()
         }
         std::cin >> user_input;
 
-        if (user_input == random)
+        if (user_input == secret_number)
         {
-            std::cout << "you and the computer guessed  " << random << std::endl;
+            std::cout << "The force is strong in this one  " << secret_number << std::endl;
         }
     }
 }
+
+//@jim4067
+//the program generated a secret number and asks the user to guess the number
