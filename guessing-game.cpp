@@ -20,6 +20,12 @@ void guess_me()
     while (user_input != random)
     {
         std::cout << "Guess a number : ";
+
+        if (!(std::cin))
+        {
+            std::cout << "please enter a numeric number" << std::endl;
+            break;
+        }
         std::cin >> user_input;
 
         if (user_input == random)
