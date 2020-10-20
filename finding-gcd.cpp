@@ -28,3 +28,6 @@ int gcd(int a, int b)
     }
     return a;
 }
+
+//jim4067
+//calculating the gcd using euclidean algorithm
